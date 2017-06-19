@@ -1,0 +1,50 @@
+/**index.wxss**/
+@import "../style/font.wxss";
+.swiper {
+  height: 340rpx;
+}
+.swiper swiper {
+  height: 100%;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;   
+}
+
+.store-info{
+  margin:20rpx;
+  margin-top:40rpx;
+}
+.store-info text{
+  width: 100%;
+  padding:10rpx;
+  color: #848484;
+}
+.hot-product {
+  margin-top:40rpx;
+  border-bottom: 11rpx solid #eee;
+}
+.slide{
+  color: #8B008B
+}
+.hot-product-wrap {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.hot-product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    width: 250rpx;
+    height: 250rpx;
+    border: 1rpx solid #eee;
+    border-left: none;
+    margin-top: -1rpx;    
+}
+.hot-product-img {
+      width: 172rpx;
+      height:129rpx;
+    }

@@ -1,0 +1,9 @@
+<view class="user">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{welcomMessage}} {{userInfo.nickName}}{{userInfo.gender?male:female}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{msg}}</text>
+  </view>
+</view>
