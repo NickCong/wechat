@@ -9,3 +9,8 @@
         </swiper>
     </view>
 </template>
+<template name="booking">
+  <view class="reservation">
+    <button bindtap="reserve">{{reserveBtn}}</button>
+  </view>
+</template>

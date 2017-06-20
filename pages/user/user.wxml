@@ -1,9 +1,21 @@
+<import src="../template/template"/>
 <view class="user">
   <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{welcomMessage}} {{userInfo.nickName}}{{userInfo.gender?male:female}}</text>
+   <image class="userinfo-head" src="{{headImageUrl}}" background-size="cover"></image>
+   <view class="userinfo-pic">
+     <image class="userinfo-avatar" src="{{userInfo.avatarUrl == null ?blankImage:userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <text class="userinfo-nickname">VIP <text class="fa fa-mars user-male" style='{{ showGender&userInfo.gender ?"display:inline":"display:none" }}'><text class="fa fa-venus user-female" style='{{ showGender&!userInfo.gender ?"display:inline":"display:none" }}'></text></text></text>
+    </view>
+  <view class="fair-style-title">
+    <text >{{msg}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{msg}}</text>
-  </view>
+  <scroll-view scroll-x="true" class="fair-style" style='{{ showGender?"display:block":"display:none" }}' >
+    <block wx:for="{{ userInfo.gender ? maleStyle:femaleStyle }}" wx:key="unique">    
+      <view style="display: inline-block" >
+        <image src="{{item}}"></image>     
+      </view>
+    </block>
+  </scroll-view>
+  <template is="booking" data="{{reserveBtn,reserve}}"></template> 
 </view>

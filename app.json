@@ -2,11 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/user/user",
+    "pages/detail/detail",
+    "pages/map/map",
     "pages/logs/logs"
   ],
   "tabBar": {
     "color": "#999999",
-    "selectedColor": "#f00",
+    "selectedColor": "#8B008B",
     "borderStyle": "white",
     "backgroundColor": "#fff",
     "list": [

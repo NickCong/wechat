@@ -6,3 +6,11 @@
   justify-content: space-between;
   box-sizing: border-box;
 } 
+.reservation{
+  border-radius: 10rpx;
+  margin:10rpx;
+}
+.reservation button{
+  background-color: #8B008B;
+  color: #ffffff
+}

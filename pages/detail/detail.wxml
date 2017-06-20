@@ -1,0 +1,6 @@
+<!--pages/detail/detail.wxml-->
+<import src="../template/template"/>
+<view class='product-detail'>
+  <image src="{{ hotProduct[pid].shopImg }}" class="detail-image"/>
+   <template is="booking" data="{{reserveBtn,reserve}}"></template> 
+</view>

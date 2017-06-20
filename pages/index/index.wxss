@@ -17,12 +17,22 @@
 }
 .store-info text{
   width: 100%;
-  padding:10rpx;
-  color: #848484;
+  color: #8B008B;
+  /*color: #848484;*/
+}
+.store-info .fa-arrow-circle-right{
+  float:right;
+  color:#848484;
+  margin-top:-1em;
+  width:1em;
+  padding-right:10rpx; 
+  font-size:1em;
 }
 .hot-product {
-  margin-top:40rpx;
+  margin-top:20rpx;
   border-bottom: 11rpx solid #eee;
+  border-top: 11rpx solid #eee;
+  padding-top: 20rpx;
 }
 .slide{
   color: #8B008B
@@ -40,11 +50,13 @@
     font-size: 26rpx;
     width: 250rpx;
     height: 250rpx;
-    border: 1rpx solid #eee;
-    border-left: none;
-    margin-top: -1rpx;    
+    /*border: 1rpx solid #eee;
+    border-left: none;*/
+    margin-top: 20rpx;
+    color: #8B008B    
 }
 .hot-product-img {
-      width: 172rpx;
-      height:129rpx;
+      width: 230rpx;
+      height:200rpx;
+      border-radius: 10rpx;
     }

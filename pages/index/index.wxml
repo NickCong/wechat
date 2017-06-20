@@ -1,14 +1,17 @@
 <!--index.wxml-->
 <import src="../template/template" />
-<import src="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 <view class="container"> 
   <template is="carousel" data="{{ imgUrls }}"></template> 
   <view class="store-info">
+  <navigator url="../map/map">
     <text class="fa fa-home">  {{ address }}</text>
-    <text class="fa fa-phone-square">  {{ phonenumber }}</text>
+    <text class="fa fa-arrow-circle-right"></text>
+    </navigator>
+    <text class="fa fa-phone-square" bindtap="calling">  {{ phonenumber }}</text> 
+    <text class="fa fa-arrow-circle-right" bindtap="calling"></text>
     <text class="fa fa-clock-o">  {{ opentime }}</text>
-    <text class="fa fa-car">  {{ parking }}</text>
-     <text class="fa fa-wifi">  {{ wifi }}</text>
+    <text class="fa fa-wifi">  {{ wifi }}</text>
+    <text class="fa fa-car">  {{ parking }}</text>     
   </view>
   <view class="hot-product">
     <view class="slide">{{hotProductTitle}}</view>

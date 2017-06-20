@@ -1,23 +1,59 @@
 /**user.wxss**/
+@import "../style/font.wxss";
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.userinfo-head{
+  width:100%;
+  height: 300rpx;
+}
+.userinfo-pic{
+   width: 128rpx;
+  height: 128rpx;
+  padding: 20rpx;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-top: -80rpx;
+}
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
   border-radius: 50%;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: #FF8C00;
+}
+.user-female{
+  color:hotpink;
+}
+.user-male{
+  color:skyblue;
+}
+.fair-style{
+  white-space: nowrap; 
+  display: flex
+}
+.fair-style image{
+  width:300rpx;
+  padding:10rpx;
+  height:400rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
-  align-items: center;
+.fair-style-title {
+  margin-top: 100rpx;
+  margin-bottom: 60rpx;
   text-align: center;
+  color: #8B008B
+}
+
+.reservation{
+  border-radius: 10rpx;
+  margin:10rpx;
+}
+.reservation button{
+  background-color: #8B008B;
+  color: #ffffff
 }
