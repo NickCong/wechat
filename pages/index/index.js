@@ -15,10 +15,17 @@ Page({
     imgUrls: [
       '../../images/001.jpg',
       '../../images/002.jpg',
-      '../../images/003.jpg',
-      '../../images/004.jpg'          
+      '../../images/003.jpg',       
     ],
-    hotProduct: [],  
+    hotProduct: [],
+    barberTitle:"发型设计师",  
+    barbers:[{
+      url:'../../images/barber1.jpg',
+      description:'122222',
+    },{
+        url:'../../images/barber2.jpg',
+      description:'2142342342',
+    }],
   },
   //事件处理函数
   bindViewTap: function() {

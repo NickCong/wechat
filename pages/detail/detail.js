@@ -8,7 +8,10 @@ Page({
   data: {
     pid:"",
     reserveBtn: '预约',
-    hotProduct:[]
+    hotProduct:[],
+    tangFair:"烫发200￥起",
+    ranFair: "染发100￥起",
+    cutFair:"剪发：店长50起 资深发型师30起",
   },
 
   /**

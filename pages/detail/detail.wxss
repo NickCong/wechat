@@ -1,5 +1,14 @@
 /* pages/detail/detail.wxss */
 .detail-image{
-  height: 340rpx;
+  height: 600rpx;
   width: 100%;
+}
+
+.product-detail text{
+  display: block;
+  margin:10rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  color:#8B008B;
+  text-align: center;
 }

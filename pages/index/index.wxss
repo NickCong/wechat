@@ -18,7 +18,7 @@
 .store-info text{
   width: 100%;
   color: #8B008B;
-  /*color: #848484;*/
+  font-size: 28rpx;
 }
 .store-info .fa-arrow-circle-right{
   float:right;
@@ -28,6 +28,39 @@
   padding-right:10rpx; 
   font-size:1em;
 }
+
+.barber{  
+  padding: 10rpx;
+  margin-top:20rpx;
+  border-top: 11rpx solid #eee;  
+  padding-top: 20rpx;
+}
+.barber-title{
+  color: #8B008B;
+  font-weight: 600;
+  text-align: center;
+}
+
+.barber-info{
+  display: flex;
+  flex-wrap: wrap;   
+  padding-left: 20rpx;
+  margin-top:20rpx;
+}
+
+.barber-info image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    width: 335rpx;
+    height: 500rpx;
+    border-radius: 10rpx;
+    margin: 10rpx;
+}
+
 .hot-product {
   margin-top:20rpx;
   border-bottom: 11rpx solid #eee;
@@ -35,7 +68,10 @@
   padding-top: 20rpx;
 }
 .slide{
-  color: #8B008B
+  font-weight: 600;
+  color: #8B008B;
+  padding-left: 10rpx;
+  text-align: center;
 }
 .hot-product-wrap {
   display: flex;

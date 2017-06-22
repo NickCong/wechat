@@ -6,13 +6,22 @@
   <navigator url="../map/map">
     <text class="fa fa-home">  {{ address }}</text>
     <text class="fa fa-arrow-circle-right"></text>
-    </navigator>
-    <text class="fa fa-phone-square" bindtap="calling">  {{ phonenumber }}</text> 
-    <text class="fa fa-arrow-circle-right" bindtap="calling"></text>
+    </navigator>   
     <text class="fa fa-clock-o">  {{ opentime }}</text>
+    <text class="fa fa-phone-square" bindtap="calling">  {{ phonenumber }}</text>
+    <text class="fa fa-arrow-circle-right" bindtap="calling"></text>    
     <text class="fa fa-wifi">  {{ wifi }}</text>
     <text class="fa fa-car">  {{ parking }}</text>     
   </view>
+  <view class="barber" >
+    <view class="barber-title">{{barberTitle}}</view>
+    <view class="barber-info">
+      <block wx:for="{{ barbers }}" wx:key="unique">     
+          <image src="{{item.url}}" title="{{item.description }}"></image>  
+      </block>
+    </view>
+  </view>
+
   <view class="hot-product">
     <view class="slide">{{hotProductTitle}}</view>
     <view class="hot-product-wrap">
